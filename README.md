@@ -4,7 +4,8 @@ A react-native app template with some basic components integrated.
 # Usage
 1. Download or fork this project to your local machine.
 2. Install [react-native-rename](https://github.com/junedomingo/react-native-rename) and follow the instructions to rename the project.
-3. Get familar with the [packages](package.json) and start to build your own app.
+3. Run npm install at the root path; Run `pod install` at the ios project path (See [cocoapods](https://cocoapods.org/)).
+4. Get familar with the [packages](package.json) and start to build your own app.
 
 ## Important components used in this app:
 
