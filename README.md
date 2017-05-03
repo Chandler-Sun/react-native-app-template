@@ -1,8 +1,12 @@
 # react-native-app-template
 A react-native app template with some basic components integrated.
-## Components
 
-### Important components used in this app:
+# Usage
+1. Download or fork this project to your local machine.
+2. Install [react-native-rename](https://github.com/junedomingo/react-native-rename) and follow the instructions to rename the project.
+3. Get familar with the [packages](package.json) and start to build your own app.
+
+## Important components used in this app:
 
 Basics:
 * [apisauce](https://github.com/skellock/apisauce): API wrapper
