@@ -1,0 +1,11 @@
+{
+  "shareSources":{
+    "Wechat":"微信",
+    "Moment":"朋友圈",
+    "Facebook":"Facebook",
+    "More":"更多"
+  },
+  
+  //end of json. with no comma so we can add lines with comma above and no need to worry about the comma
+  "This is the end":""
+}

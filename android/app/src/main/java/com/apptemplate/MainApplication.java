@@ -3,6 +3,20 @@ package com.apptemplate;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.jadsonlourenco.RNShakeEvent.RNShakeEventPackage;
+import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
+import com.theweflex.react.WeChatPackage;
+import fr.greweb.reactnativeviewshot.RNViewShotPackage;
+import com.oblador.vectoricons.VectorIconsPackage;
+import com.horcrux.svg.SvgPackage;
+import cl.json.RNSharePackage;
+import com.kevinejohn.RNMixpanel.RNMixpanel;
+import fr.bamlab.rnimageresizer.ImageResizerPackage;
+import com.i18n.reactnativei18n.ReactNativeI18n;
+import com.smixx.fabric.FabricPackage;
+import com.learnium.RNDeviceInfo.RNDeviceInfo;
+import com.lwansbrough.RCTCamera.RCTCameraPackage;
+import com.cmcewen.blurview.BlurViewPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
@@ -22,7 +36,21 @@ public class MainApplication extends Application implements ReactApplication {
     @Override
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
-          new MainReactPackage()
+          new MainReactPackage(),
+            new RNShakeEventPackage(),
+            new ReactNativePushNotificationPackage(),
+            new WeChatPackage(),
+            new RNViewShotPackage(),
+            new VectorIconsPackage(),
+            new SvgPackage(),
+            new RNSharePackage(),
+            new RNMixpanel(),
+            new ImageResizerPackage(),
+            new ReactNativeI18n(),
+            new FabricPackage(),
+            new RNDeviceInfo(),
+            new RCTCameraPackage(),
+            new BlurViewPackage()
       );
     }
   };

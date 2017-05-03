@@ -1,0 +1,14 @@
+{
+  "button":{
+    "select": "Select"
+  },
+  "shareSources":{
+    "Wechat":"Wechat",
+    "Moment":"Moment",
+    "Facebook":"Facebook",
+    "More":"More"
+  },
+
+  //end of json. with no comma so we can add lines with comma above and no need to worry about the comma
+  "This is the end":""
+}
