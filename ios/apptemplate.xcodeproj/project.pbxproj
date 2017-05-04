@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -93,6 +92,8 @@
 		FBAB343E95E74756BA564C72 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5AA17AC92FCE4160AFAE5D78 /* Ionicons.ttf */; };
 		FCD1F9BCCF5E48C38F426DD8 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BC94AE28281F4EE19431A564 /* FontAwesome.ttf */; };
 		FE6FBD941BD2423986BB515E /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42A083C37B5A47338124B1A7 /* FontAwesome.ttf */; };
+		723997AE1231436B97211D40 /* libRNFS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 871B4579C8E94147A8273A8F /* libRNFS.a */; };
+		BCD4E8B1AEA94E46B3BED13B /* libBVLinearGradient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 86F51F3C99D44F22B5ED75DE /* libBVLinearGradient.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -523,6 +524,10 @@
 		F8E72FB2F2D04FF2B8838297 /* RNDeviceInfo.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNDeviceInfo.xcodeproj; path = "../node_modules/react-native-device-info/RNDeviceInfo.xcodeproj"; sourceTree = "<group>"; };
 		F92E640C4C1E4E728BFC8A46 /* libRNPhotosFramework.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNPhotosFramework.a; sourceTree = "<group>"; };
 		F99F41691AA04AD3B68A4A01 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
+		CE6164C1290C4CA5A033B3B9 /* RNFS.xcodeproj */ = {isa = PBXFileReference; name = "RNFS.xcodeproj"; path = "../node_modules/react-native-fs/RNFS.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		871B4579C8E94147A8273A8F /* libRNFS.a */ = {isa = PBXFileReference; name = "libRNFS.a"; path = "libRNFS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		7B5FD486E46C4057A6164C02 /* BVLinearGradient.xcodeproj */ = {isa = PBXFileReference; name = "BVLinearGradient.xcodeproj"; path = "../node_modules/react-native-linear-gradient/BVLinearGradient.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		86F51F3C99D44F22B5ED75DE /* libBVLinearGradient.a */ = {isa = PBXFileReference; name = "libBVLinearGradient.a"; path = "libBVLinearGradient.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -568,6 +573,8 @@
 				91035D3C6EA64F1787908413 /* libRCTWKWebView.a in Frameworks */,
 				97466523F8269D01AE8CC06E /* libPods-apptemplate.a in Frameworks */,
 				F1D751EC5C394888B721AF07 /* libRNShakeEvent.a in Frameworks */,
+				723997AE1231436B97211D40 /* libRNFS.a in Frameworks */,
+				BCD4E8B1AEA94E46B3BED13B /* libBVLinearGradient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -934,6 +941,8 @@
 				EA4E701FE0AF4A52B569E172 /* RCTWeChat.xcodeproj */,
 				A04346E1BD48460789BB8F54 /* RCTWKWebView.xcodeproj */,
 				A06CE9C3F5DC47B1976F3DB7 /* RNShakeEvent.xcodeproj */,
+				CE6164C1290C4CA5A033B3B9 /* RNFS.xcodeproj */,
+				7B5FD486E46C4057A6164C02 /* BVLinearGradient.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1636,11 +1645,15 @@
 					"$(SRCROOT)/../node_modules/react-native-wechat/ios",
 					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 					"$(SRCROOT)/../node_modules/react-native-shake-event",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = apptemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/apptemplate\"",
+					"\"$(SRCROOT)/apptemplate\"",
 					"\"$(SRCROOT)/apptemplate\"",
 				);
 				OTHER_LDFLAGS = (
@@ -1680,11 +1693,15 @@
 					"$(SRCROOT)/../node_modules/react-native-wechat/ios",
 					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView",
 					"$(SRCROOT)/../node_modules/react-native-shake-event",
+					"$(SRCROOT)/../node_modules/react-native-fs/**",
+					"$(SRCROOT)/../node_modules/react-native-linear-gradient/BVLinearGradient",
 				);
 				INFOPLIST_FILE = apptemplate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/apptemplate\"",
+					"\"$(SRCROOT)/apptemplate\"",
 					"\"$(SRCROOT)/apptemplate\"",
 				);
 				OTHER_LDFLAGS = (

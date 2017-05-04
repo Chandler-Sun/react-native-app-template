@@ -3,6 +3,8 @@ package com.apptemplate;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.BV.LinearGradient.LinearGradientPackage;
+import com.rnfs.RNFSPackage;
 import com.jadsonlourenco.RNShakeEvent.RNShakeEventPackage;
 import com.dieam.reactnativepushnotification.ReactNativePushNotificationPackage;
 import com.theweflex.react.WeChatPackage;
@@ -37,6 +39,8 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new LinearGradientPackage(),
+            new RNFSPackage(),
             new RNShakeEventPackage(),
             new ReactNativePushNotificationPackage(),
             new WeChatPackage(),
