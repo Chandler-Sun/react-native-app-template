@@ -70,7 +70,6 @@ class HomeView extends Component {
 
   _handleAppStateChange = (appState) => {
     if (appState == 'active') {
-      this._onRefresh()
       this._consumeNotification(this.props.lastNotification)
       this._getClipboardText()
     }
