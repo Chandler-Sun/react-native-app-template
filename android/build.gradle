@@ -23,3 +23,9 @@ allprojects {
         maven { url 'https://github.com/500px/500px-android-blur/raw/master/releases/' }
     }
 }
+
+model {
+    android.packagingOptions {
+        pickFirst 'lib/armeabi-v7a/libblasV8.so'
+    }
+}
