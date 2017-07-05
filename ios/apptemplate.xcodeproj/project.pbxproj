@@ -38,6 +38,13 @@
 		2CC795E31F0C94BB005DD5C6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC795E21F0C94BB005DD5C6 /* ImageIO.framework */; };
 		2CC795E61F0C94D2005DD5C6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC795E41F0C94D2005DD5C6 /* libsqlite3.0.tbd */; };
 		2CC795E71F0C94D2005DD5C6 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC795E51F0C94D2005DD5C6 /* libsqlite3.tbd */; };
+		2CC796511F0CB376005DD5C6 /* Async.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC796481F0CB376005DD5C6 /* Async.m */; };
+		2CC796521F0CB376005DD5C6 /* EachBlockEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7964A1F0CB376005DD5C6 /* EachBlockEnumerator.m */; };
+		2CC796531F0CB376005DD5C6 /* MapBlockEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7964C1F0CB376005DD5C6 /* MapBlockEnumerator.m */; };
+		2CC796541F0CB376005DD5C6 /* RepeatBlockUntilEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC7964E1F0CB376005DD5C6 /* RepeatBlockUntilEnumerator.m */; };
+		2CC796551F0CB376005DD5C6 /* WaterfallBlockEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC796501F0CB376005DD5C6 /* WaterfallBlockEnumerator.m */; };
+		2CC7965A1F0CB384005DD5C6 /* RCTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC796561F0CB384005DD5C6 /* RCTUtils.m */; };
+		2CC7965B1F0CB384005DD5C6 /* RNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC796581F0CB384005DD5C6 /* RNConfig.m */; };
 		2E841493204F46038867AAA3 /* SanFranciscoThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C49BC7B77544203B765A096 /* SanFranciscoThin.ttf */; };
 		308B2BB8F2374ACFBCCC6F3D /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4A63286CBCC43B2AB0D72A0 /* Rubik-LightItalic.ttf */; };
 		36037E7688304D3AB9EED59E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C77FBA354744BBE94683676 /* MaterialIcons.ttf */; };
@@ -503,8 +510,6 @@
 		00C302BB1ABCB91800DB3ED1 /* RCTImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTImage.xcodeproj; path = "../node_modules/react-native/Libraries/Image/RCTImage.xcodeproj"; sourceTree = "<group>"; };
 		00C302D31ABCB9D200DB3ED1 /* RCTNetwork.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTNetwork.xcodeproj; path = "../node_modules/react-native/Libraries/Network/RCTNetwork.xcodeproj"; sourceTree = "<group>"; };
 		00C302DF1ABCB9EE00DB3ED1 /* RCTVibration.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVibration.xcodeproj; path = "../node_modules/react-native/Libraries/Vibration/RCTVibration.xcodeproj"; sourceTree = "<group>"; };
-		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* apptemplateTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = apptemplateTests.m; sourceTree = "<group>"; };
 		01094E2C0A06483F88ADA206 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		030ECFBEB58B476893AD1F07 /* libRNBlur.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNBlur.a; sourceTree = "<group>"; };
 		0E04D355C29A420D9619646C /* Rubik-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.ttf"; path = "../node_modules/native-base/Fonts/Rubik-Light.ttf"; sourceTree = "<group>"; };
@@ -537,6 +542,22 @@
 		2CC795E21F0C94BB005DD5C6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		2CC795E41F0C94D2005DD5C6 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		2CC795E51F0C94D2005DD5C6 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		2CC796451F0CB376005DD5C6 /* AsyncTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AsyncTypes.h; path = apptemplate/lib/AsyncTypes.h; sourceTree = "<group>"; };
+		2CC796461F0CB376005DD5C6 /* Async-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Async-Prefix.pch"; path = "apptemplate/lib/Async-Prefix.pch"; sourceTree = "<group>"; };
+		2CC796471F0CB376005DD5C6 /* Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Async.h; path = apptemplate/lib/Async.h; sourceTree = "<group>"; };
+		2CC796481F0CB376005DD5C6 /* Async.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Async.m; path = apptemplate/lib/Async.m; sourceTree = "<group>"; };
+		2CC796491F0CB376005DD5C6 /* EachBlockEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EachBlockEnumerator.h; path = apptemplate/lib/EachBlockEnumerator.h; sourceTree = "<group>"; };
+		2CC7964A1F0CB376005DD5C6 /* EachBlockEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EachBlockEnumerator.m; path = apptemplate/lib/EachBlockEnumerator.m; sourceTree = "<group>"; };
+		2CC7964B1F0CB376005DD5C6 /* MapBlockEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapBlockEnumerator.h; path = apptemplate/lib/MapBlockEnumerator.h; sourceTree = "<group>"; };
+		2CC7964C1F0CB376005DD5C6 /* MapBlockEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapBlockEnumerator.m; path = apptemplate/lib/MapBlockEnumerator.m; sourceTree = "<group>"; };
+		2CC7964D1F0CB376005DD5C6 /* RepeatBlockUntilEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RepeatBlockUntilEnumerator.h; path = apptemplate/lib/RepeatBlockUntilEnumerator.h; sourceTree = "<group>"; };
+		2CC7964E1F0CB376005DD5C6 /* RepeatBlockUntilEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RepeatBlockUntilEnumerator.m; path = apptemplate/lib/RepeatBlockUntilEnumerator.m; sourceTree = "<group>"; };
+		2CC7964F1F0CB376005DD5C6 /* WaterfallBlockEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WaterfallBlockEnumerator.h; path = apptemplate/lib/WaterfallBlockEnumerator.h; sourceTree = "<group>"; };
+		2CC796501F0CB376005DD5C6 /* WaterfallBlockEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WaterfallBlockEnumerator.m; path = apptemplate/lib/WaterfallBlockEnumerator.m; sourceTree = "<group>"; };
+		2CC796561F0CB384005DD5C6 /* RCTUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RCTUtils.m; path = apptemplate/lib/RCTUtils.m; sourceTree = "<group>"; };
+		2CC796571F0CB384005DD5C6 /* RNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNConfig.h; path = apptemplate/lib/RNConfig.h; sourceTree = "<group>"; };
+		2CC796581F0CB384005DD5C6 /* RNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNConfig.m; path = apptemplate/lib/RNConfig.m; sourceTree = "<group>"; };
+		2CC796591F0CB384005DD5C6 /* RCTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTUtils.h; path = apptemplate/lib/RCTUtils.h; sourceTree = "<group>"; };
 		32764A043645414F813286E7 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		3393E0EC32874268A1B908B4 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		33E2788C90C24BC99E5F0EDD /* RNShare.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNShare.xcodeproj; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; };
@@ -717,23 +738,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		00E356EF1AD99517003FC87E /* apptemplateTests */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F21AD99517003FC87E /* apptemplateTests.m */,
-				00E356F01AD99517003FC87E /* Supporting Files */,
-			);
-			path = apptemplateTests;
-			sourceTree = "<group>";
-		};
-		00E356F01AD99517003FC87E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				00E356F11AD99517003FC87E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		139105B71AF99BAD00B5F7CC /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -755,6 +759,7 @@
 		13B07FAE1A68108700A75B9A /* apptemplate */ = {
 			isa = PBXGroup;
 			children = (
+				2CC796431F0CB357005DD5C6 /* lib */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -1018,6 +1023,37 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		2CC796431F0CB357005DD5C6 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				2CC796571F0CB384005DD5C6 /* RNConfig.h */,
+				2CC796581F0CB384005DD5C6 /* RNConfig.m */,
+				2CC796591F0CB384005DD5C6 /* RCTUtils.h */,
+				2CC796561F0CB384005DD5C6 /* RCTUtils.m */,
+				2CC796441F0CB35D005DD5C6 /* Async */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+		2CC796441F0CB35D005DD5C6 /* Async */ = {
+			isa = PBXGroup;
+			children = (
+				2CC796451F0CB376005DD5C6 /* AsyncTypes.h */,
+				2CC796461F0CB376005DD5C6 /* Async-Prefix.pch */,
+				2CC796471F0CB376005DD5C6 /* Async.h */,
+				2CC796481F0CB376005DD5C6 /* Async.m */,
+				2CC796491F0CB376005DD5C6 /* EachBlockEnumerator.h */,
+				2CC7964A1F0CB376005DD5C6 /* EachBlockEnumerator.m */,
+				2CC7964B1F0CB376005DD5C6 /* MapBlockEnumerator.h */,
+				2CC7964C1F0CB376005DD5C6 /* MapBlockEnumerator.m */,
+				2CC7964D1F0CB376005DD5C6 /* RepeatBlockUntilEnumerator.h */,
+				2CC7964E1F0CB376005DD5C6 /* RepeatBlockUntilEnumerator.m */,
+				2CC7964F1F0CB376005DD5C6 /* WaterfallBlockEnumerator.h */,
+				2CC796501F0CB376005DD5C6 /* WaterfallBlockEnumerator.m */,
+			);
+			name = Async;
+			sourceTree = "<group>";
+		};
 		5E91572E1DD0AC6500FF2AA8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -1090,7 +1126,6 @@
 			children = (
 				13B07FAE1A68108700A75B9A /* apptemplate */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* apptemplateTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				B773A4B1E5B84A339979A5DA /* Frameworks */,
 				165FBB5A02AE4AD9B2BE5619 /* Resources */,
@@ -1855,8 +1890,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC796531F0CB376005DD5C6 /* MapBlockEnumerator.m in Sources */,
+				2CC796541F0CB376005DD5C6 /* RepeatBlockUntilEnumerator.m in Sources */,
+				2CC796551F0CB376005DD5C6 /* WaterfallBlockEnumerator.m in Sources */,
+				2CC7965B1F0CB384005DD5C6 /* RNConfig.m in Sources */,
+				2CC796511F0CB376005DD5C6 /* Async.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				2CC796521F0CB376005DD5C6 /* EachBlockEnumerator.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
+				2CC7965A1F0CB384005DD5C6 /* RCTUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
