@@ -6,6 +6,11 @@ import { Settings } from 'react-native'
 
 const { Types, Creators } = createActions({
   startup: ['user','token'],
+  requestDeviceTokenSuccess: ['deviceToken'],
+  registerNotificationSuccess: ['deviceToken'],
+  registerNotification: null,
+  didReceiveNotification: ['notification'],
+  didConsumeLastNotification: null,
   startWorking:['workingJobName','workingProgressData'],
   endWorking:null,
   updateSettings: ['key', 'value'],

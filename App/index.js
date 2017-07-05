@@ -1,12 +1,12 @@
 // @flow
 // make sure apply settings by importing this module.
-import ConfigSettings from '../Config'
+import ConfigSettings from './Config'
 
 import React, { Component } from 'react'
 import { Provider } from 'react-redux'
-import '../I18n/I18n' // keep before root container
-import RootContainer from './RootContainer'
-import createStore from '../State'
+import './I18n/I18n' // keep before root container
+import RootContainer from './Views/RootContainer'
+import createStore from './State'
 
 
 const store = createStore()

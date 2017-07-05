@@ -49,9 +49,17 @@ class RootContainer extends Component {
     Linking.addEventListener('url', this._handleOpenURL.bind(this));
     this._setupMixpanel();
     this._setupNetworkDetector()
-    this._setupBackgroundDetection()
-    this._setupNotification()
+    // this._setupBackgroundDetection()
+    // this._setupNotification()
     this._handleInitialOpenURL()
+  }
+
+  componentWillUnmount() {
+    AppState.removeEventListener('change', this._handleAppStateChange);
+    // BackgroundTimer.clearInterval(this._backgroundTimerForDetection);    
+    Linking.removeEventListener('url', this._handleOpenURL.bind(this));
+    // PushNotification.unload()
+    // this._geoWatchId != null && navigator.geolocation.clearWatch(this._geoWatchId)
   }
 
   _setupNotification(){
@@ -155,14 +163,6 @@ class RootContainer extends Component {
   _handleConnectivityChange(reach) {
     console.tron.log('change: ' + reach)
     this.props.connectivityChanged(reach)
-}
-
-  componentWillUnmount() {
-    AppState.removeEventListener('change', this._handleAppStateChange);
-    BackgroundTimer.clearInterval(this._backgroundTimerForDetection);    
-    Linking.removeEventListener('url', this._handleOpenURL.bind(this));
-    PushNotification.unload()
-    this._geoWatchId != null && navigator.geolocation.clearWatch(this._geoWatchId)
   }
 
   _handleAppStateChange = (appState) => {
@@ -223,8 +223,6 @@ class RootContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
   return {
-    token: state.userAuth.token,
-    user: state.userAuth.user,
     started: state.app.started,
     nav: state.nav,
     settings: state.app.settings,

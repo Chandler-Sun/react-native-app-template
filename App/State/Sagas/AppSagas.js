@@ -26,8 +26,6 @@ export function * startup (api, action) {
     version:DeviceInfo.getReadableVersion(),
     device:DeviceInfo.getModel()
   })
-  yield put(UserAuthActions.resetStatus())
-  yield put(ScreenshotListActions.resetStatus())
   yield put(AppActions.endWorking())
 }
 export function * registerNotification(api, {deviceToken}) {

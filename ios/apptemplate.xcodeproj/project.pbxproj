@@ -45,6 +45,7 @@
 		2CC796551F0CB376005DD5C6 /* WaterfallBlockEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC796501F0CB376005DD5C6 /* WaterfallBlockEnumerator.m */; };
 		2CC7965A1F0CB384005DD5C6 /* RCTUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC796561F0CB384005DD5C6 /* RCTUtils.m */; };
 		2CC7965B1F0CB384005DD5C6 /* RNConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC796581F0CB384005DD5C6 /* RNConfig.m */; };
+		2CC798A01F0CC861005DD5C6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CC7989F1F0CC861005DD5C6 /* CoreTelephony.framework */; };
 		2E841493204F46038867AAA3 /* SanFranciscoThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6C49BC7B77544203B765A096 /* SanFranciscoThin.ttf */; };
 		308B2BB8F2374ACFBCCC6F3D /* Rubik-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F4A63286CBCC43B2AB0D72A0 /* Rubik-LightItalic.ttf */; };
 		36037E7688304D3AB9EED59E /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C77FBA354744BBE94683676 /* MaterialIcons.ttf */; };
@@ -558,6 +559,7 @@
 		2CC796571F0CB384005DD5C6 /* RNConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RNConfig.h; path = apptemplate/lib/RNConfig.h; sourceTree = "<group>"; };
 		2CC796581F0CB384005DD5C6 /* RNConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RNConfig.m; path = apptemplate/lib/RNConfig.m; sourceTree = "<group>"; };
 		2CC796591F0CB384005DD5C6 /* RCTUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RCTUtils.h; path = apptemplate/lib/RCTUtils.h; sourceTree = "<group>"; };
+		2CC7989F1F0CC861005DD5C6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		32764A043645414F813286E7 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		3393E0EC32874268A1B908B4 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		33E2788C90C24BC99E5F0EDD /* RNShare.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNShare.xcodeproj; path = "../node_modules/react-native-share/ios/RNShare.xcodeproj"; sourceTree = "<group>"; };
@@ -647,6 +649,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CC798A01F0CC861005DD5C6 /* CoreTelephony.framework in Frameworks */,
 				2CC795E61F0C94D2005DD5C6 /* libsqlite3.0.tbd in Frameworks */,
 				2CC795E71F0C94D2005DD5C6 /* libsqlite3.tbd in Frameworks */,
 				2CC795E31F0C94BB005DD5C6 /* ImageIO.framework in Frameworks */,
@@ -1146,6 +1149,7 @@
 		B773A4B1E5B84A339979A5DA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CC7989F1F0CC861005DD5C6 /* CoreTelephony.framework */,
 				2CC795E41F0C94D2005DD5C6 /* libsqlite3.0.tbd */,
 				2CC795E51F0C94D2005DD5C6 /* libsqlite3.tbd */,
 				2CC795E21F0C94BB005DD5C6 /* ImageIO.framework */,
@@ -2014,6 +2018,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_ENV = Debug;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -2055,6 +2060,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_ENV = Release;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

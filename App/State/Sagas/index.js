@@ -14,6 +14,6 @@ export const api = sharedAPIClient
 export default function * root () {
   yield [
     takeLatest(AppActionTypes.STARTUP, startup, api),
-    takeLatest(UserAuthActionTypes.REQUEST_DEVICE_TOKEN_SUCCESS, registerNotification, api),
+    takeLatest(AppActionTypes.REQUEST_DEVICE_TOKEN_SUCCESS, registerNotification, api),
   ]
 }
