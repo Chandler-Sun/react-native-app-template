@@ -1,12 +1,12 @@
 {
-	"name": "apptemplate",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"start": "node node_modules/react-native/local-cli/cli.js start",
-		"test": "jest"
-	},
-	"dependencies": {
+  "name": "apptemplate",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
     "apisauce": "^0.12.0",
     "buffer": "^5.0.6",
     "color": "^1.0.3",
@@ -30,6 +30,7 @@
     "react-native-fetch-blob": "^0.10.5",
     "react-native-i18n": "^1.0.0",
     "react-native-image-resizer": "^0.1.0",
+    "react-native-in-app-utils": "^5.4.0",
     "react-native-linear-gradient": "^2.0.0",
     "react-native-mail": "^3.0.1",
     "react-native-mixpanel": "0.0.15",
@@ -59,18 +60,18 @@
     "reselect": "^3.0.1",
     "seamless-immutable": "^7.1.2",
     "url-parse": "^1.1.8"
-	},
-	"devDependencies": {
-		"babel-jest": "20.0.3",
-		"babel-preset-react-native": "2.0.0",
-		"jest": "20.0.4",
-		"react-test-renderer": "16.0.0-alpha.12",
+  },
+  "devDependencies": {
+    "babel-jest": "20.0.3",
+    "babel-preset-react-native": "2.0.0",
+    "jest": "20.0.4",
+    "react-test-renderer": "16.0.0-alpha.12",
     "reactotron-apisauce": "^1.6.0",
     "reactotron-react-native": "^1.6.0",
     "reactotron-redux": "^1.6.1",
     "reactotron-redux-saga": "^1.6.0"
-	},
-	"jest": {
-		"preset": "react-native"
-	}
+  },
+  "jest": {
+    "preset": "react-native"
+  }
 }

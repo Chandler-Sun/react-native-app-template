@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -107,6 +106,7 @@
 		F65F6CC63FA54DE1833A4A02 /* Rubik-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44EE275EC12F4215B427E6C7 /* Rubik-Regular.ttf */; };
 		F858E6F970104CA3BBCB5AF6 /* Arial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9B508494BF2B48F7A95EB232 /* Arial.ttf */; };
 		FC5CAF08231843528650E814 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 32764A043645414F813286E7 /* EvilIcons.ttf */; };
+		D064B8FBB7C54A62B29207F9 /* libInAppUtils.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F1D3CFCAF9484C53B8789155 /* libInAppUtils.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -642,6 +642,8 @@
 		F4A63286CBCC43B2AB0D72A0 /* Rubik-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-LightItalic.ttf"; path = "../node_modules/native-base/Fonts/Rubik-LightItalic.ttf"; sourceTree = "<group>"; };
 		FD2350F8427B49028A09AF22 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
 		FEA3C294473945058F68CD4D /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		582C699D0AE149A2BD2E7FD4 /* InAppUtils.xcodeproj */ = {isa = PBXFileReference; name = "InAppUtils.xcodeproj"; path = "../node_modules/react-native-in-app-utils/InAppUtils.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
+		F1D3CFCAF9484C53B8789155 /* libInAppUtils.a */ = {isa = PBXFileReference; name = "libInAppUtils.a"; path = "libInAppUtils.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -693,6 +695,7 @@
 				04AA65490E3D47B4ABB76210 /* libRCTWeChat.a in Frameworks */,
 				4E754E4B5C8B49A9B2BA63DA /* libRCTWKWebView.a in Frameworks */,
 				159CF58FBB6F8F59EA16C8D3 /* libPods-apptemplate.a in Frameworks */,
+				D064B8FBB7C54A62B29207F9 /* libInAppUtils.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1111,6 +1114,7 @@
 				53E8EB750D764A799F40182B /* RNViewShot.xcodeproj */,
 				DA510080ABA44CB3ADED07AF /* RCTWeChat.xcodeproj */,
 				43056836401648CAA28F25FD /* RCTWKWebView.xcodeproj */,
+				582C699D0AE149A2BD2E7FD4 /* InAppUtils.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -1953,6 +1957,7 @@
 					"$(SRCROOT)/../node_modules/react-native-view-shot/ios",
 					"$(SRCROOT)/../node_modules/react-native-wechat/ios",
 					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView/**",
+					"$(SRCROOT)/../node_modules/react-native-in-app-utils/InAppUtils",
 				);
 				INFOPLIST_FILE = apptemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1965,6 +1970,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrsuncan.apptemplate;
 				PRODUCT_NAME = apptemplate;
 				VERSIONING_SYSTEM = "apple-generic";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/apptemplate\"",
+				);
 			};
 			name = Debug;
 		};
@@ -1999,6 +2008,7 @@
 					"$(SRCROOT)/../node_modules/react-native-view-shot/ios",
 					"$(SRCROOT)/../node_modules/react-native-wechat/ios",
 					"$(SRCROOT)/../node_modules/react-native-wkwebview-reborn/ios/RCTWKWebView/**",
+					"$(SRCROOT)/../node_modules/react-native-in-app-utils/InAppUtils",
 				);
 				INFOPLIST_FILE = apptemplate/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -2011,6 +2021,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mrsuncan.apptemplate;
 				PRODUCT_NAME = apptemplate;
 				VERSIONING_SYSTEM = "apple-generic";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/apptemplate\"",
+				);
 			};
 			name = Release;
 		};
